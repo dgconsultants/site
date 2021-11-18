@@ -10,11 +10,7 @@ $(function () {
   // when the form is submitted
   $('form').on('submit', function (e) {
     e.preventDefault();
-
-    console.log(($(this)[0]))
-    console.log(new FormData($(this)[0]))
-
-    fetch(`/register?${$(this).serialize()}`, {
+    fetch(`https://portfolio-works-app.herokuapp.com/register?${$(this).serialize()}`, {
       method: 'post',
       body: new FormData($(this)[0])
     })
