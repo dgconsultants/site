@@ -1,0 +1,79 @@
+body {
+    font-family: 'Poppins', sans-serif !important;
+    color:#587087;
+}
+.wallets .home{
+    color:#587087;
+}
+nav a{
+    color:#5878bc!important;
+    font-weight:600;
+}
+#pills-tab .nav-item a {
+    color: #222;
+}
+.nav-pills .nav-link:hover{
+    background-color: #ccc5;
+}
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link{
+background:#5878bc;
+color: #fff!important;
+}
+#footer .col-3 a{
+    font-size: 13px;
+    color: #587087!important;
+    text-decoration: none;
+    font-weight: 400;
+}
+#footer .socialf {
+    max-width:50%!important;
+}
+.footimg {
+    height: 1.25rem;
+}
+.btn.btn-primary.col-12.btn-send {
+    background: #2a498d;
+    font-weight: 600;
+    border-color:#5878bc;
+}
+.desc{
+    color: #2a498d;
+    font-weight: 600;
+    display: block;
+    text-align: center;
+    width: 100%;
+    font-size:13px;
+}
+.nav-pills .nav-link.roundin{
+    border-radius: 3rem;
+}
+
+h1 {
+    margin-bottom: 40px;
+}
+
+label {
+    color: #333;
+}
+
+.btn-send {
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    margin-bottom: 20px;
+}
+
+.help-block.with-errors {
+    color: #ff5050;
+    margin-top: 5px;
+}
+.col-12.text-center.lpfxqP {
+    color:#587087;
+    font-size: 30px;
+    font-weight: 300;
+}
+.wall-impo {
+    color:#587087!important;
+    font-size: 35px;
+    font-weight: 500;
+}
