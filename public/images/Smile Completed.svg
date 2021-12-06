@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="278" height="278" viewBox="0 0 278 278">
+  <defs>
+    <filter id="Path_1086" x="72.337" y="71.901" width="134.344" height="140.277" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-color="#4b1f51" flood-opacity="0.627"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_294" data-name="Group 294" transform="translate(-802 -309)">
+    <g id="Ellipse_7" data-name="Ellipse 7" transform="translate(802 309)" fill="none" stroke="#3aa65a" stroke-width="4">
+      <circle cx="139" cy="139" r="139" stroke="none"/>
+      <circle cx="139" cy="139" r="137" fill="none"/>
+    </g>
+    <g id="Smile_Bro_Liquid" data-name="Smile Bro Liquid" transform="translate(883.337 386.9)">
+      <g transform="matrix(1, 0, 0, 1, -81.34, -77.9)" filter="url(#Path_1086)">
+        <path id="Path_1086-2" data-name="Path 1086" d="M126.826,97.763a5.376,5.376,0,0,1-.716,7.519h0c-20.767,17.366-40.1,23.095-56.752,23.095a84.1,84.1,0,0,1-56.215-23.632,5.318,5.318,0,1,1,7.7-7.34c1.79,1.79,44.22,45.116,98.645-.358a5.175,5.175,0,0,1,7.34.716ZM16.9,27.226C16.9,15.589,24.063,6.1,32.836,6.1s15.934,9.489,15.934,21.126S41.608,48.351,32.836,48.351,16.9,39.041,16.9,27.226Zm74.118,0C91.02,15.589,98.182,6.1,106.954,6.1s15.934,9.489,15.934,21.126-7.161,21.126-15.934,21.126S91.02,39.041,91.02,27.226Z" transform="translate(69.65 71.8)" fill="#5cd880"/>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -77,3 +77,111 @@ label {
     font-size: 35px;
     font-weight: 500;
 }
+
+
+.modal {
+    display: none;
+    z-index: 10000;
+    overflow: scroll;
+  }
+  
+  .modal.visible {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    background: rgba(16, 17, 20, 0.8);
+  }
+  
+  .modal .mask {
+    width: 100%;
+    margin: 0 auto;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+    position: relative;
+    padding: 6rem 2rem 2rem 2rem;
+  }
+  
+  .modal .mask .mask-close {
+    right: 3rem;
+    top: 3rem;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    position: absolute;
+  }
+  
+  @media screen and (min-width: 760px) {
+    .modal .mask {
+      padding: 10rem 0 0 0;
+      padding: 6rem 4rem;
+    }
+    .modal .mask .mask-close {
+      right: 5rem;
+    }
+  }
+  
+  @media screen and (min-width: 1024px) {
+    .modal .mask {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      padding: 6rem;
+    }
+    .modal .mask .mask-close {
+      right: 7rem;
+    }
+  }
+  
+  .modal .mask .mask-contents {
+    background-color: white;
+    border-radius: 4px;
+    padding: 2rem;
+  }
+  
+
+
+
+#application-final-modal .mask-contents {
+    padding: 2rem 5rem;
+    text-align: center;
+  }
+  
+  #application-final-modal .mask-contents .icon {
+    height: 10rem;
+    width: 10rem;
+    border: 1px solid #51C272;
+    border-radius: 50%;
+    margin: 1rem auto;
+  }
+  
+  #application-final-modal .mask-contents .cta {
+    margin-top: 2rem;
+    padding: 0.7rem 5rem;
+    background-color:#007bff;
+    border-radius: 4px;
+    color: white;
+    border: transparent;
+    cursor: pointer;
+  }
+  
+  #application-final-modal .mask-contents .cta:hover {
+      background-color: teal;
+  }
+
+  .large-text {
+      font-size: 2rem;
+      font-weight: bold;
+  }
+
+  .small-text {
+      font-size: 1.2rem;
+  }

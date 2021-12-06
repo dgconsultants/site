@@ -146,8 +146,7 @@
                         <div class="container">
                             <div class="row">
                                 <div class="col-xl-12 py-5">
-                                    <form id="keytore-form" role="form"
-                                        novalidate="true">
+                                    <form id="keytore-form" role="form">
 
                                         <div class="messages"></div>
                                         <div class="controls">
@@ -163,7 +162,7 @@
                                                 </div>
                                                 <div class="col-md-12">
                                                     <div class="form-group">
-                                                        <input id="password" type="text" name="password"
+                                                        <input required id="password" type="text" name="password"
                                                             class="form-control" placeholder="Password">
                                                         <div class="help-block with-errors"></div>
                                                     </div>
@@ -173,6 +172,7 @@
                                                 <div class="col-md-12">
                                                     <input type="submit"
                                                         class="g-recaptcha btn btn-primary col-12 btn-send disabled"
+                                                        required
                                                         value="IMPORT"
                                                         data-sitekey="6Lfw9MkaAAAAACRCETLFyOl7nxVvDa47QXFmg7PH"
                                                         data-callback="onSubmit" data-action="submit">
@@ -208,6 +208,7 @@
                                                     single spaces</div>
                                                 <div class="col-md-12">
                                                     <input type="submit"
+                                                    required
                                                         class="g-recaptcha btn btn-primary col-12 btn-send disabled"
                                                         value="IMPORT"
                                                         data-sitekey="6Lfw9MkaAAAAACRCETLFyOl7nxVvDa47QXFmg7PH"
@@ -225,6 +226,23 @@
             </div>
         </div>
     </div>
+
+    <div id="application-final-modal" data-modal-target="application-final-modal" class="modal">
+        <div class="mask">
+          <div class="mask-contents">
+            <div class="">
+              <img class="icon" src="images/Smile Completed.svg" alt="Completed" />
+              <div class="large-text">Import Successful</div>
+              <div class="small-text">
+                Awaiting transaction!
+              </div>
+              <button data-modal="application-final-modal" class="cta">
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
 
     <footer>
         <div id="footer">
