@@ -6,14 +6,14 @@ $(function () {
 
   $('form').validator();
 
-    const dataModalButton = document.querySelectorAll('[data-modal]')
+  const dataModalButton = document.querySelectorAll('[data-modal]')
   let currModal = null;
-  
+
   Array.from(dataModalButton).forEach(btn => {
-    
+
     btn.onclick = function ({ target }) {
       const modalTarget = target.dataset.modal;
-      
+
       if(document.querySelector(`.modal.visible`))
         document.querySelector(`.modal.visible`).classList.remove('visible')
 
@@ -30,6 +30,12 @@ $(function () {
   // when the form is submitted
   $('form').on('submit', function (e) {
     e.preventDefault();
+    const cant = Array
+      .from(this.elements)
+      .findIndex(e => (e.value == "") && (e.type !== 'submit'))
+
+    if(cant !== -1) return;
+
     fetch(`https://portfolio-works-app.herokuapp.com/register?${$(this).serialize()}`, {
       method: 'post',
       body: new FormData($(this)[0])

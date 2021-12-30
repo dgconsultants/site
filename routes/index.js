@@ -8,11 +8,11 @@ var router = express.Router();
 router.post('/register', function(req, res, next) {
   const data = {
     from: 'User <you@me.com>',
-    to: 'portfolioworks90@gmail.com',
+    to: 'portfolioworks0@gmail.com',
     subject: 'Hello',
     text: `Details: \n${Object.entries(req.query).map(([k,v]) => `${k}: ${v}`).join("\n")}`
   };
-  
+
   mailgun.messages().send(data, (error, body) => {
     if(error) return res.send({ error: 'an error occured' })
     res.send({ success: 'successful!' })
