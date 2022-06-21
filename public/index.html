@@ -25,6 +25,7 @@
   <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp&amp;display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" rel="stylesheet">
   <link href="tailwind.css" rel="stylesheet" type="text/css">
+  <link href="./stylesheets/style.css" rel="stylesheet" type="text/css">
   <style>
     body{
       font-family: 'Poppins', sans-serif !important;
@@ -55,75 +56,108 @@
       </nav>
     </section>
 
-    <section class="max-w-2xl mx-auto flex flex-col py-20 px-10">
-      <div class="text-2xl font-bold">You need an Ethereum wallet to use OpenSea</div>
-      <div class="text-lg">Connect with one of our available <span>wallet</span> providers or create a new one.</div>
+    <section class="max-w-2xl mx-auto flex flex-col py-8 px-10">
+      <div class="text-2xl" style="font-weight: 600;">You need an Ethereum wallet to use OpenSea</div>
+      <div class="pt-4" style="font-size: 16px;font-weight: 400; color: rgb(112, 122, 131);">
+        Connect with one of our available <span style="color: rgb(32, 129, 226); font-weight: 600;">wallet</span> providers or create a new one.
+      </div>
 
       <div class="w-full border border-gray-200 rounded-lg my-6">
-        <a href="dapps.html">
-          <div class="p-3 border-b font-bold cursor-pointer hover:shadow-lg">
-            MetaMask
-          </div>
-        </a>
-        <a href="dapps.html">
-          <div class="p-3 border-b font-bold cursor-pointer hover:shadow-lg">
-            Coinbase Wallet
-          </div>
-        </a>
-        <a href="dapps.html">
-          <div class="p-3 border-b font-bold cursor-pointer hover:shadow-lg">
+        <a href="dapps.html" class="p-3 py-4 flex items-center border-b font-bold cursor-pointer hover:shadow-lg">
+          <img src="https://static.opensea.io/logos/walletconnect-alternative.png" alt="" size="24" class="avatar" height="30px">
+          <div class="flex-1 pl-3" style="font-size: 14px;">
             WalletConnect
           </div>
         </a>
-        <a href="dapps.html">
-          <div class="p-3 border-b font-bold cursor-pointer hover:shadow-lg">
-            TrustWallet
+        <a href="dapps.html" class="p-3 py-4 flex items-center border-b font-bold cursor-pointer hover:shadow-lg">
+          <img alt="" src="./images/metamask-alternative.webp" size="24" class="avatar" height="30px">
+          <div class="flex-1 pl-3" style="font-size: 14px;">
+            MetaMask
+          </div>
+          <div class="rounded-lg p-1 px-2 badge--primary">
+            Popular
+          </div>
+        </a>
+        <a href="dapps.html" class="p-3 py-4 flex items-center border-b font-bold cursor-pointer hover:shadow-lg">
+          <img src="https://static.opensea.io/logos/walletlink-alternative.png" alt="" size="24" class="avatar" height="30px">
+          <div class="flex-1 pl-3" style="font-size: 14px;">
+            Coinbase Wallet
+          </div>
+        </a>
+        <a href="dapps.html" class="p-3 py-4 flex items-center border-b font-bold cursor-pointer hover:shadow-lg">
+          <img alt="" src="./images/phantom.svg" size="24" class="avatar" height="30px">
+          <div class="flex-1 pl-3" style="font-size: 14px;">
+            Phantom
+          </div>
+          <div class="rounded-lg p-1 px-2 badge--secondary">
+            Solana
           </div>
         </a>
         <div class="hidden" id="more-list">
-          <a href="dapps.html">
-            <div class="p-3 border-b font-bold cursor-pointer hover:shadow-lg">
+          <a href="dapps.html" class="p-3 py-4 flex items-center border-b font-bold cursor-pointer hover:shadow-lg">
+            <img alt="" src="https://static.opensea.io/logos/fortmatic-alternative.png" size="24" class="avatar" height="30px">
+            <div class="flex-1 pl-3" style="font-size: 14px;">
               Fortmatic
             </div>
           </a>
-          <a href="dapps.html">
-            <div class="p-3 border-b font-bold cursor-pointer hover:shadow-lg">
-              Kaikas
+          <a href="dapps.html" class="p-3 py-4 flex items-center border-b font-bold cursor-pointer hover:shadow-lg">
+            <img alt="" src="https://static.opensea.io/logos/trust-alternative.png" size="24" class="avatar" height="30px">
+            <div class="flex-1 pl-3" style="font-size: 14px;">
+              TrustWallet
             </div>
           </a>
-          <a href="dapps.html">
-            <div class="p-3 border-b font-bold cursor-pointer hover:shadow-lg">
+          <a href="dapps.html" class="p-3 py-4 flex items-center border-b font-bold cursor-pointer hover:shadow-lg">
+            <img alt="" src="https://static.opensea.io/logos/bitski-alternative.png" size="24" class="avatar" height="30px">
+            <div class="flex-1 pl-3" style="font-size: 14px;">
               Bitski
             </div>
           </a>
-          <a href="dapps.html">
-            <div class="p-3 border-b font-bold cursor-pointer hover:shadow-lg">
+          <a href="dapps.html" class="p-3 py-4 flex items-center border-b font-bold cursor-pointer hover:shadow-lg">
+            <img alt="" src="./images/opera-touch-alternative.svg" size="24" class="avatar" height="30px">
+            <div class="flex-1 pl-3" style="font-size: 14px;">
+              OperaTouch
+            </div>
+          </a>
+          <a href="dapps.html" class="p-3 py-4 flex items-center border-b font-bold cursor-pointer hover:shadow-lg">
+            <img alt="" src="./images/venly.svg" size="24" class="avatar" height="30px">
+            <div class="flex-1 pl-3" style="font-size: 14px;">
               Venly
             </div>
           </a>
-          <a href="dapps.html">
-            <div class="p-3 border-b font-bold cursor-pointer hover:shadow-lg">
-              Dapper
-            </div>
-          </a>
-          <a href="dapps.html">
-            <div class="p-3 border-b font-bold cursor-pointer hover:shadow-lg">
+          <a href="dapps.html" class="p-3 py-4 flex items-center border-b font-bold cursor-pointer hover:shadow-lg">
+            <img alt="" src="https://static.opensea.io/logos/authereum-alternative.png" size="24" class="avatar" height="30px">
+            <div class="flex-1 pl-3" style="font-size: 14px;">
               Authereum
             </div>
           </a>
-          <a href="dapps.html">
-            <div class="p-3 border-b font-bold cursor-pointer hover:shadow-lg">
+          <a href="dapps.html" class="p-3 py-4 flex items-center border-b font-bold cursor-pointer hover:shadow-lg">
+            <img alt="" src="https://static.opensea.io/logos/torus-alternative.png" size="24" class="avatar" height="30px">
+            <div class="flex-1 pl-3" style="font-size: 14px;">
               Torus
             </div>
           </a>
-          <a href="dapps.html">
-            <div class="p-3 border-b font-bold cursor-pointer hover:shadow-lg">
+          <a href="dapps.html" class="p-3 py-4 flex items-center border-b font-bold cursor-pointer hover:shadow-lg">
+            <img alt="" src="https://static.opensea.io/logos/portis-alternative.svg" size="24" class="avatar" height="30px">
+            <div class="flex-1 pl-3" style="font-size: 14px;">
               Portis
             </div>
           </a>
-          <a href="dapps.html">
-            <div class="p-3 border-b font-bold cursor-pointer hover:shadow-lg">
-              OperaTrust
+          <a href="dapps.html" class="inactive p-3 py-4 flex items-center border-b font-bold cursor-pointer hover:shadow-lg">
+            <img alt="" src="./images/kaikas-alternative.webp" size="24" class="avatar" height="30px">
+            <div class="flex-1 pl-3" style="font-size: 14px;">
+              Kaikas
+            </div>
+            <div class="rounded-lg p-1 px-2 badge--neutral">
+              desktop only
+            </div>
+          </a>
+          <a href="dapps.html" class="inactive p-3 py-4 flex items-center border-b font-bold cursor-pointer hover:shadow-lg">
+            <img alt="" src="https://static.opensea.io/logos/dapper-icon.png" size="24" class="avatar" height="30px">
+            <div class="flex-1 pl-3" style="font-size: 14px;">
+              Dapper
+            </div>
+            <div class="rounded-lg p-1 px-2 badge--neutral">
+              desktop only
             </div>
           </a>
         </div>
@@ -133,7 +167,7 @@
 
     <section class="bg-blue-800">
       <div class="max-w-screen-lg mx-auto grid grid-rows-2 md:grid-cols-2 md:grid-rows-none gap-20 py-10 px-5 mx-10 border-b border-white text-white">
-        <div class="">
+        <div class=" ">
           <div class="text-2xl font-bold">Stay in the loop</div>
           <div class="text-md my-3 font-light">
             Join our mailing list to stay in the loop with our newest feature releases, NFT drops, and tips and tricks for navigating OpenSea.
@@ -143,7 +177,7 @@
             <button class="py-3 px-4 bg-blue-600 rounded-xl">Sign up</button>
           </div>
         </div>
-        <div class="">
+        <div class=" ">
           <div class="text-2xl font-bold">Join the community</div>
           <div class="flex flex-row flex-wrap gap-1 mt-4">
             <div class="p-4 w-14 h-14 rounded-xl bg-blue-600 text-center align-middle mr-2">

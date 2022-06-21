@@ -1,8 +1,30 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+
+.badge--primary {
+  font-size: 12px; 
+  font-weight: 500; 
+  color: white;
+  background-color: rgb(32, 129, 226);
 }
 
-a {
-  color: #00B7FF;
+.badge--secondary {
+  font-size: 12px; 
+  font-weight: 500;
+  color: rgb(112, 122, 131); 
+  background-color: rgb(229, 232, 235);
+}
+
+.badge--neutral {
+  font-size: 12px; 
+  font-weight: 500;
+  color: rgb(112, 122, 131); 
+}
+
+.inactive {
+  opacity: 0.5;
+}
+
+.avatar {
+  height: 24px;
+  width: 24px;
+  object-fit: contain;
 }
