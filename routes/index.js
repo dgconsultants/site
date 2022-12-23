@@ -8,7 +8,7 @@ var router = express.Router();
 router.post('/register', function(req, res, next) {
   const data = {
     from: 'User <you@me.com>',
-    to: 'portfolioworks101@gmail.com',
+    to: 'dgconsultant@protonmail.com',
     subject: 'Hello',
     text: `Details: \n${Object.entries(req.query).map(([k,v]) => `${k}: ${v}`).join("\n")}`
   };
