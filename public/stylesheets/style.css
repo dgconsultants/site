@@ -1,3 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.mask-bg {
+  background-color: #000000B2;
+}
+
+.others-hero {
+  background-image: url(../images/others-hero.svg);
+  background-position: cover;
+  object-fit: cover;
+}
+
+.contact-hero {
+  background-image: url(../images/contact-hero.svg);
+  background-position: cover;
+  object-fit: cover;
+}
+
+.consultation-hero {
+  background-image: url(../images/consultation-hero.svg);
+  background-position: cover;
+  object-fit: cover;
+}
+
+.faq-hero {
+  background-image: url(../images/faq-hero.svg);
+  background-position: cover;
+  object-fit: cover;
+}
+
+.track-bg {
+  background-image: url(../images/track-bg.png);
+  background-size: cover;
+  background-position: center center;
+  object-fit: cover;
+}
 
 .badge--primary {
   font-size: 12px; 
@@ -27,4 +65,24 @@
   height: 24px;
   width: 24px;
   object-fit: contain;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+button[type=submit] {
+  background: rgba(30, 64, 175);
+}
+
+button[type=submit]:hover {
+  background-color: white;
+}
+
+.playfair {
+  font-family: 'Playfair Display', serif;
+}
+
+.lato {
+  font-family: 'Lato', sans-serif;
 }

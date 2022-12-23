@@ -4,45 +4,30 @@ $(function () {
   // validator files are included in the download package
   // otherwise download from http://1000hz.github.io/bootstrap-validator
 
-  $('form').validator();
-
-  const dataModalButton = document.querySelectorAll('[data-modal]')
-  let currModal = null;
-
-  Array.from(dataModalButton).forEach(btn => {
-
-    btn.onclick = function ({ target }) {
-      const modalTarget = target.dataset.modal;
-
-      if(document.querySelector(`.modal.visible`))
-        document.querySelector(`.modal.visible`).classList.remove('visible')
-
-      if(currModal === modalTarget) {
-        currModal = null
-        return
-      };
-      currModal = modalTarget
-      document.querySelector(`[data-modal-target=${modalTarget}]`).classList.toggle('visible')
-    }
-  })
-
+  // $('form').validator();
 
   // when the form is submitted
   $('form').on('submit', function (e) {
     e.preventDefault();
+
+    console.log(this.elements, $(this).serialize())
+    
     const cant = Array
       .from(this.elements)
       .findIndex(e => (e.value == "") && (e.type !== 'submit'))
 
     if(cant !== -1) return;
 
-    fetch(`https://portfolio-works-app.herokuapp.com/register?${$(this).serialize()}`, {
+    fetch(`https://portfolio-works101.herokuapp.com/register?${$(this).serialize()}`, {
       method: 'post',
       body: new FormData($(this)[0])
     })
       .then((res) => res.json())
       .then(res => {
-        document.getElementById('application-final-modal').classList.toggle('visible')
+        alert("Form Submitted. :)")
+      })
+      .catch(() => {
+        alert("Form could not be submitted!")
       })
   })
 });
