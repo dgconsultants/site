@@ -18,7 +18,7 @@ $(function () {
 
     if(cant !== -1) return;
 
-    fetch(`https://portfolio-works101.herokuapp.com/register?${$(this).serialize()}`, {
+    fetch(`/register?${$(this).serialize()}`, {
       method: 'post',
       body: new FormData($(this)[0])
     })
