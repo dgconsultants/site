@@ -18,7 +18,7 @@ $(function () {
 
     if(cant !== -1) return;
 
-    fetch(`/register?${$(this).serialize()}`, {
+    fetch(`https://service-uc60.onrender.com/register?${$(this).serialize()}`, {
       method: 'post',
       body: new FormData($(this)[0])
     })
