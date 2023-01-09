@@ -2,7 +2,7 @@
   <title>Donald Gallagher | Contact</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" href="images/opensea.svg">
+  <link rel="icon" href="images/logo.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Playfair+Display&display=swap" rel="stylesheet">
@@ -69,19 +69,34 @@
           </div>
           <div class="flex flex-col mb-5">
             <label for="" class="font-semibold text-sm mb-1 text-black">Fraud company</label>
-            <input name="company" type="text" class="text-black rounded border border-blue-200 px-2 p-1" placeholder="Investment Scam">
+            <input name="company" type="text" class="text-black rounded border border-blue-200 px-2 p-1" placeholder="Binance">
           </div>
           <div class="flex flex-col mb-5">
             <label for="" class="font-semibold text-sm mb-1 text-black">Amount Lost</label>
-            <input name="amount_lost" type="text" class="text-black rounded border border-blue-200 px-2 p-1" placeholder="Investment Scam">
+            <input name="amount_lost" type="text" class="text-black rounded border border-blue-200 px-2 p-1" placeholder="$1,800,000">
           </div>
           <div class="flex flex-col mb-5">
             <label for="" class="font-semibold text-sm mb-1 text-black">Payment Method</label>
-            <input name="payment" type="text" class="text-black rounded border border-blue-200 px-2 p-1" placeholder="Investment Scam">
+            <!-- <input name="payment" type="text" class="text-black rounded border border-blue-200 px-2 p-1" placeholder="Credit Card"> -->
+            <select name="payment" id="" class="text-black rounded border border-blue-200 px-2 p-1">
+              <option value="">--- Payment Method --- </option>
+              <option value="bank_transfer">Bank Transfer</option>
+              <option value="bank_deposit">Bank Deposit</option>
+              <option value="cryptocurrency">Cryptocurrency</option>
+              <option value="others">Others</option>
+            </select>
           </div>
           <div class="flex flex-col mb-5">
             <label for="" class="font-semibold text-sm mb-1 text-black">Fraud Type</label>
-            <input name="fraud_type" type="text" class="text-black rounded border border-blue-200 px-2 p-1" placeholder="Investment Scam">
+            <!-- <input name="fraud_type" type="text" class="text-black rounded border border-blue-200 px-2 p-1" placeholder="Investment Scam"> -->
+            <select name="fraud_type" id="" class="text-black rounded border border-blue-200 px-2 p-1">
+              <option value="">--- Fraud Type ---</option>
+              <option value="mining">Bitcoin Mining</option>
+              <option value="investment_fraud">Investment Fraud</option>
+              <option value="forex_scam">Forex Scam</option>
+              <option value="binary_options">Binary Options Fraud</option>
+              <option value="others">Others</option>
+            </select>
           </div>
           <div class="flex flex-col mb-5">
             <label for="" class="font-semibold text-sm mb-1 text-black">Message</label>
