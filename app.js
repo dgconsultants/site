@@ -6,12 +6,13 @@ var logger = require('morgan');
 const cors = require('cors')
 const payload = require('payload');
 var indexRouter = require('./routes/index');
+const { DB_USERNAME, DB_PASSWORD } = process.env;
 
 const app = express();
 
 payload.init({
   secret: 'SECRET_KEY',
-  mongoURL: 'mongodb+srv://root:root@cluster0.ln5urg6.mongodb.net/?retryWrites=true&w=majority',
+  mongoURL: `mongodb+srv://${DB_USERNAME}:${DB_PASSWORD}@cluster0.ln5urg6.mongodb.net/?retryWrites=true&w=majority`,
   express: app,
 });
 
