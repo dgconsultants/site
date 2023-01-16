@@ -30,7 +30,7 @@ const template = `
     node.getElementById("name").textContent = name;
     node.getElementById("location").textContent = location;
     node.getElementById("text").textContent = review;
-    node.getElementById("image").setAttribute("src", image.url)
+    node.getElementById("image").setAttribute("src", `${image.url}`)
 
     const stars_node = node.getElementById("stars");
     [...(new Array(stars))].forEach(() => {

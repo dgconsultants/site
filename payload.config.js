@@ -42,9 +42,12 @@ export default buildConfig({
       slug: 'media',
       upload: {
         staticURL: '/media',
-        staticDir: 'media',
+        staticDir: './public/media',
         adminThumbnail: 'thumbnail',
         mimeTypes: ['image/*']
+      },
+      access: {
+        read: () => true
       }
     }
   ],
