@@ -31,24 +31,12 @@ export default buildConfig({
           required: true
         },
         {
-          name: "image",
-          type: "upload",
-          relationTo: "media",
+          name: "date",
+          type: "date",
+          // defaultValue: '1988-11-05T8:00:00.000+05:00',
           required: true
         }
       ]
-    },
-    {
-      slug: 'media',
-      upload: {
-        staticURL: '/media',
-        staticDir: './public/media',
-        adminThumbnail: 'thumbnail',
-        mimeTypes: ['image/*']
-      },
-      access: {
-        read: () => true
-      }
     }
   ],
   rateLimit: {
@@ -59,6 +47,6 @@ export default buildConfig({
 
   // GraphQL is included by default at /api/graphql
   graphQL: {
-    disablePlaygroundInProduction: false,
+    disablePlaygroundInProduction: true,
   }
 });
