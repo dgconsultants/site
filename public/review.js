@@ -17,10 +17,11 @@ const template = `
   const wrapper = document.getElementById("reviews");
   const response = await fetch("/all-reviews");
   const { docs } = await response.json();
+  const count = wrapper.dataset.count;
 
   const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', "Jun", 'Jul', 'Aug', 'Sep', 'Oct', "Nov", 'Dec']
 
-  docs.forEach(({ name, location, review, stars, date }) => {
+  docs.splice(0, count || docs.length).forEach(({ name, location, review, stars, date }) => {
     const _node = document.createElement('template');
     _node.innerHTML = template;
     const node  = _node.content;
