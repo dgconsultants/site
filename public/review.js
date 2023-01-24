@@ -31,7 +31,7 @@ const template = `
     node.getElementById("text").textContent = review;
 
     const _date = date ? new Date(date) : new Date();
-    node.getElementById("date").textContent = `${months[_date.getUTCMonth()]}, ${_date.getUTCDay()} ${_date.getFullYear()}`;
+    node.getElementById("date").textContent = `${months[_date.getUTCMonth()]}, ${_date.getUTCDate()} ${_date.getFullYear()}`;
     // node.getElementById("image").setAttribute("src", `${image.url}`)
 
     const stars_node = node.getElementById("stars");
